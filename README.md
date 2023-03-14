@@ -1,4 +1,4 @@
-# convert to screenshots
+## Convert to screenshots
 
 ```
 npm install -g decktape

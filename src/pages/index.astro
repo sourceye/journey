@@ -1,0 +1,110 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Deck from "../components/Deck.astro";
+import Slide from "../components/Slide.astro";
+import time_spendature from "../assets/time_spendature.png";
+import landscape_before from "../assets/landscape_before.png";
+import landscape_after from "../assets/landscape_after.png";
+import reasoning from "../assets/reasoning.png";
+import platform from "../assets/platform.png";
+import qr from "../assets/qr_dark.png";
+import Logo from "../components/Logo.astro";
+import IconLine from "../components/IconLine.astro";
+import { Icon } from "astro-iconify";
+import IconStack from "../components/IconStack.astro";
+import me from "../assets/me.jpeg";
+---
+
+<Layout title="Sourceye">
+	<Deck>
+		<Slide><h1>Wie kan hier coderen?</h1></Slide>
+		<Slide>
+			<h2>Waar spenderen programmeurs tijd aan?</h2>
+			<img class="r-stretch mt-10" src={time_spendature} />
+		</Slide>
+		<Slide>
+			<Logo />
+			<h3 class="text-4xl">The next generation of code intelligence</h3>
+		</Slide>
+		<Slide>
+			<div class="flex flex-col items-start w-fit m-auto">
+				<div>
+					<IconLine
+						icon="material-symbols:cycle"
+						line="Capteert automatisch de structuur van code"
+					/>
+				</div>
+				<div class="fragment">
+					<IconLine
+						icon="ic:baseline-speed"
+						line="Versnelt onboarding"
+					/>
+				</div>
+				<div class="fragment">
+					<IconLine
+						icon="material-symbols:diamond-rounded"
+						line="Minder defecten bij implementatie"
+					/>
+				</div>
+			</div>
+		</Slide>
+		<Slide>
+			<img class="r-stretch" src={landscape_before} />
+		</Slide>
+		<Slide>
+			<img class="r-stretch" src={landscape_after} />
+		</Slide>
+		<Slide>
+			<img class="r-stretch" src={reasoning} />
+		</Slide>
+		<Slide>
+			<img class="r-stretch" src={platform} />
+		</Slide>
+		<Slide>
+			<div class="flex">
+				<img class="rounded-full w-40 h-40" src={me} />
+				<div class="fragment flex">
+					<IconStack icon="ic:sharp-plus" />
+					<IconStack
+						icon="material-symbols:check-circle"
+						line="Bewezen technologie"
+					/>
+				</div>
+				<div class="fragment flex">
+					<IconStack icon="ic:sharp-plus" />
+
+					<IconStack
+						icon="iconoir:agile"
+						line="Continue integratie"
+					/>
+				</div>
+				<div class="fragment flex">
+					<IconStack icon="ic:baseline-equals" />
+					<IconStack icon="material-symbols:rocket-launch" />
+				</div>
+			</div>
+		</Slide>
+		<Slide>
+			<h2 class="mb-10">Wat kunnen jullie doen?</h2>
+			<div class="flex">
+				<div class="basis-1/3">
+					<img src={qr} class="rounded-2xl r-stretch" width="300" />
+				</div>
+				<div class="basis-2/3 flex flex-col items-start w-fit m-auto">
+					<IconLine
+						icon="material-symbols:alternate-email"
+						line="Volg ons"
+					/>
+					<IconLine
+						icon="material-symbols:person-search"
+						line="Op zoek naar cofounders"
+					/>
+					<IconLine
+						icon="mdi:chat-question"
+						line="Feedback en vragen?"
+					/>
+				</div>
+			</div>
+		</Slide>
+	</Deck>
+</Layout>
