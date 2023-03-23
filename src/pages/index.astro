@@ -13,14 +13,41 @@ import IconLine from "../components/IconLine.astro";
 import { Icon } from "astro-iconify";
 import IconStack from "../components/IconStack.astro";
 import me from "../assets/me.jpeg";
+import programmer from "../assets/programmer.png";
 ---
 
 <Layout title="Sourceye">
 	<Deck>
-		<Slide><h1>Wie kan hier coderen?</h1></Slide>
+		<Slide>
+			<div class="grid grid-cols-2">
+				<img
+					width="400"
+					class="fragment rounded-2xl m-10"
+					src="https://thehealthcaretechnologyreport.com/wp-content/uploads/2023/03/ChatGPT.jpeg"
+				/>
+				<img
+					width="400"
+					class="fragment rounded-2xl m-10"
+					src="https://www.bleepstatic.com/content/hl-images/2023/02/17/bing-chat-header-blue.jpg"
+				/>
+				<img
+					width="400"
+					class="fragment rounded-2xl m-10"
+					src="https://articles-img.sftcdn.net/f_auto,t_article_cover_xl/auto-mapping-folder/sites/3/2023/03/google-bard-thumb-marzo.jpg"
+				/>
+				<img
+					width="400"
+					class="fragment rounded-2xl m-10"
+					src="https://github.blog/wp-content/uploads/2023/03/GitHub-Copilot-X-Announcement.jpg"
+				/>
+			</div>
+		</Slide>
 		<Slide>
 			<h2>Waar spenderen programmeurs tijd aan?</h2>
 			<img class="r-stretch mt-10" src={time_spendature} />
+		</Slide>
+		<Slide>
+			<img class="r-stretch" src={programmer} />
 		</Slide>
 		<Slide>
 			<Logo />
@@ -48,6 +75,7 @@ import me from "../assets/me.jpeg";
 				</div>
 			</div>
 		</Slide>
+		<!-- verdeeld landschap creert minder waarde -->
 		<Slide>
 			<img class="r-stretch" src={landscape_before} />
 		</Slide>
